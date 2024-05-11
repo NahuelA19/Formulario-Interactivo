@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario de Contacto</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Formulario de Contacto</h1>
+    <form id="contactForm">
+      <div class="form-group">
+        <label for="ape">Ingrese su Apellido:</label>
+        <input type="text" id="ape" name="apellido" maxlength="30" value="Aquí su apellido" required>
+      </div>
+
+      <div class="form-group">
+        <label for="nom">Ingrese su Nombre:</label>
+        <input type="text" id="nom" name="nombre" maxlength="40" value="Aquí su nombre" required>
+      </div>
+
+      <div class="form-group">
+        <label for="dni">Ingrese su DNI:</label>
+        <input type="text" id="dni" name="documento" maxlength="8" value="11111111" required>
+      </div>
+
+      <div class="form-group">
+        <label for="fecha">Ingrese la Fecha:</label>
+        <input type="date" id="fecha" name="fecha" min="2024-02-28" required>
+      </div>
+
+      <button type="submit" id="submitButton">Enviar</button>
+      <button type="button" onclick="resetForm()">Limpiar</button>
+    </form>
+
+    <div id="response"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
